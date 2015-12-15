@@ -1,0 +1,49 @@
+{
+    "name": "longman/profiler-library-itdcms",
+    "type": "library",
+    "description": "PHP profiler library for ITDCMS",
+    "keywords": ["profiler", "debugger"],
+    "license": "MIT",
+    "homepage": "https://github.com/akalongman/php-profiler-library-itdcms",
+    "support": {
+        "issues": "https://github.com/akalongman/php-profiler-library-itdcms/issues",
+        "source": "https://github.com/akalongman/php-profiler-library-itdcms"
+    },
+    "authors": [
+        {
+            "name": "Avtandil Kikabidze aka LONGMAN",
+            "email": "akalongman@gmail.com",
+            "homepage": "https://longman.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "longman/profiler-library": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Longman\\ProfilerLibrary\\ITDCMS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.1",
+        "phpspec/phpspec": "~2.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://github.com/akalongman/php-profiler-library.git"
+        }
+    ],
+    "scripts": {
+        "post-package-install": "Longman\\ProfilerLibrary\\ITDCMS\\Installer::postInstall",
+        "post-package-update": "Longman\\ProfilerLibrary\\ITDCMS\\Installer::postUpdate",
+        "pre-package-uninstall": "Longman\\ProfilerLibrary\\ITDCMS\\Installer::preUninstall"
+    }
+}

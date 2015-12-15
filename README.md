@@ -1,2 +1,1 @@
-# php-profiler-library-itdcms
-PHP profiler library for ITDCMS
+# PHP Profiler Library for ITDCMS
