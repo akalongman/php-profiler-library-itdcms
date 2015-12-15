@@ -35,12 +35,6 @@
         "phpspec/phpspec": "~2.1",
         "squizlabs/php_codesniffer": "~2.3"
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git://github.com/akalongman/php-profiler-library.git"
-        }
-    ],
     "scripts": {
         "post-package-install": "Longman\\ProfilerLibrary\\ITDCMS\\Installer::postInstall",
         "post-package-update": "Longman\\ProfilerLibrary\\ITDCMS\\Installer::postUpdate",
